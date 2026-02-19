@@ -1,4 +1,4 @@
-# odintictactoe
+# Odin Tic Tac Toe
 The Odin Project - Tic Tac Toe
 
 A tic-tac-toe game first coded in a console version to make sure game logic works.

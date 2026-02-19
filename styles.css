@@ -1,6 +1,7 @@
 body {
     background: #0c0ca8;
     background: radial-gradient(circle, rgba(12, 12, 168, 1) 0%, rgba(10, 0, 45, 1) 100%);
+    background-color: #e5e5f7;
 }
 
 h1 {
