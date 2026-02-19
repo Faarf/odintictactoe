@@ -6,23 +6,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tic Tac  Toe</title>
         <link rel="stylesheet" href="styles.css" />
-        <!-- <script src="script.js" defer></script> -->
+        <script src="script.js" defer></script>
     </head>
     <body>
         <h1>Tic Tac Toe</h1>
 
-        <div id="board">
-            <div class="cell" id="0"></div>
-            <div class="cell" id="1"></div>
-            <div class="cell" id="2">X</div>
-            <div class="cell" id="3"></div>
-            <div class="cell" id="4">X</div>
-            <div class="cell" id="5"></div>
-            <div class="cell" id="6">X</div>
-            <div class="cell" id="7"></div>
-            <div class="cell" id="8"></div>
+        <div id="player-turn">
+            <h2>Turn: <span id="turn">X</span></h2>
+            <h2 id="player">Player</h2>
         </div>
 
+        <div id="board">
+            <div class="cell" data-row="0" data-col="0" id="0"><span></span></div>
+            <div class="cell" data-row="0" data-col="1" id="1"><span></span></div>
+            <div class="cell" data-row="0" data-col="2" id="2"><span></span></div>
+            <div class="cell" data-row="1" data-col="0" id="3"><span></span></div>
+            <div class="cell" data-row="1" data-col="1" id="4"><span></span></div>
+            <div class="cell" data-row="1" data-col="2" id="5"><span></span></div>
+            <div class="cell" data-row="2" data-col="0" id="6"><span></span></div>
+            <div class="cell" data-row="2" data-col="1" id="7"><span></span></div>
+            <div class="cell" data-row="2" data-col="2" id="8"><span></span></div>
+        </div>
+
+        <div id="start_board">
+            
+            <form action="#" id="player-name">
+                <h1 style="margin-bottom:-5%">Enter player names:</h1>
+                <div id="input-container">
+                    <h1>Player 1</h1>
+                    <input type="text" id="player1">
+                    <h1>Player 2</h1>
+                    <input type="text" id="player2">
+                    <button id="start-button" type="submit">Start Game</button>
+                </div>
+                
+            </form>
+            
+        </div>
+
+        <div id="end_board">
+            <h1 id="winner"></h1>
+            <button id="restart-button" type="submit">Restart Game</button>
+        </div>
         
     </body>
 </html>
